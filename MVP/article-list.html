@@ -1,0 +1,47 @@
+<link rel="import" href="./components/polymer/polymer.html">
+<link rel="import" href="article-entry.html">
+
+<polymer-element name="article-list">
+    <template>
+        <style>
+            :host {
+                box-sizing: border-box;
+                display: block;
+                padding: 0 10% 0 10%;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+
+        <div layout vertical center>
+            <template repeat="{{article in articles | filter(startDate, endDate)}}">
+                <article-entry link="{{article.link}}" title="{{article.title}}" fulltext="{{article.fulltext}}"></article-entry>
+            </template>
+        </div>
+    </template>
+    <script>
+        Polymer('article-list', {
+            publish: {
+                startDate: Date.now(),
+                articles: [],
+                endDate: Date.now()
+            },
+            create: function() {
+                //this.articles = [];
+            },
+            ready: function() {
+
+            },
+            //a function that returns a function specific to dateValue which filters the list
+            filter: function (list, startDate, endDate) {
+                if (!startDate || !endDate) return list;
+                var ret = list.filter(function (el) {
+                    //return Math.random() > 0.5;
+                    return (startDate <= el.date && endDate >= el.date);
+                }, this);
+                console.log(ret);
+                return ret;
+            }
+        });
+    </script>
+</polymer-element>

@@ -1,0 +1,88 @@
+<link rel="import" href="./components/polymer/polymer.html">
+<link rel="import" href="components/paper-shadow/paper-shadow.html" />
+<link rel="import" href="article-entry.html">
+
+<polymer-element name="page-about">
+    <template>
+        <style>
+            span.line {
+                display: inline-block;
+            }
+
+            .card-header {
+                box-sizing: border-box;
+                display: block;
+                position: relative;
+                background-color: white;
+                /*to so there is no resizing*/
+                border: 1px solid white;
+                padding: 20px;
+                width: 100%;
+                font-size: 1.2rem;
+                font-weight: 300;
+                margin: 10px 10px 10px 10px;
+                text-align: center;
+            }
+
+                .card-header:hover {
+                    border: 1px solid royalblue;
+                }
+
+                .card-header p {
+                    margin: 0;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    /*padding-left: 10px;*/
+                    /*font-family: 'Poly', serif;*/
+                }
+
+                .card-header h2 {
+                    margin: 0;
+                    font-size: 1.8rem;
+                    font-weight: 300;
+                    /*font-family: 'Poly', serif;*/
+                }
+
+                .card-header img {
+                    width: 20%;
+                    opacity: 0.7;
+                }
+
+            @media (min-width: 481px) {
+                .container {
+                    width: 90%;
+                    margin: auto;
+                }
+            }
+        </style>
+        <section class="container" layout vertical center>
+            <paper-shadow z="2" class="card-header" layout vertical center>
+                <img src="images/pivotpaper.svg" alt="logo" />
+                <h1>PivotPaper</h1>
+                <p>
+                    <h3>privacy policy: </h3><span>We care about your data! Therefore, no data sent to our server contains personal information about you.
+To get insights about you using PivotPaper, we are using Google Analytics.
+If you want to learn more how Google uses the provided data, see <a href="www.google.com/policies/privacy/partners/">www.google.com/policies/privacy/partners/</a>.
+</span>
+                </p>
+                <p>
+                    <h3 class="line">Impressum: </h3><span>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</span>
+                </p>
+            </paper-shadow>
+        </section>
+    </template>
+    <script>
+        Polymer('page-about', {
+            publish: {
+
+            },
+            create: function () {
+                //this.articles = [];
+            },
+            ready: function () {
+
+            }
+        });
+    </script>
+</polymer-element>

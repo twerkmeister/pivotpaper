@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <title>PivotPaper</title>
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+    <script src="date-en-US.js"></script>
+    <script src="jquery-1.11.2.min.js"></script>
+    <script src="Chart.min.js"></script>
+    <script src="./components/webcomponentsjs/webcomponents.js"></script>
+
+    
+    <link href='http://fonts.googleapis.com/css?family=Poly:400,400italic' rel='stylesheet' type='text/css'>
+    <link rel="import" href="./components/font-roboto/roboto.html">
+    <link rel="import" href="./components/core-header-panel/core-header-panel.html" />
+    <link rel="import" href="./components/core-toolbar/core-toolbar.html" />
+    <link rel="import" href="./components/paper-tabs/paper-tabs.html" />
+    <link href="./components/core-animated-pages/core-animated-pages.html" rel="import">
+    <link href="./components/core-animated-pages/transitions/cross-fade.html" rel="import">
+    <link href="./components/core-animated-pages/transitions/slide-from-right.html" rel="import">
+    <link rel="import" href="./page-pivotpaper.html"/>
+    <link rel="import" href="./page-about.html" />
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments);
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-62814203-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <style shim-shadowdom>
+        paper-tabs /deep/ #ink {
+            color: royalblue;
+        }
+        paper-tabs /deep/ #selectionBar {
+            background-color: royalblue;
+        }
+
+    </style>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            background-color: #E5E5E5;
+            font-family: 'RobotoDraft', sans-serif;
+        }
+        core-animated-pages {
+            position: absolute;
+            top: 50px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+        section.page {
+            height: 100%;
+            width: 100%;
+        }
+
+        .container {
+            width: 98%;
+            margin: 50px auto;
+        }
+
+        @media (min-width: 481px) {
+            #tabs {
+                width: 200px;
+            }
+        }
+        #tabs {
+                width: 100%;
+                margin: 0;
+                text-transform: uppercase;
+            }
+
+        core-header-panel {
+            height: 100%;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        core-toolbar {
+            background: white;
+            color: black;
+        }
+
+        paper-tabs.blue::shadow #selectionBar {
+            background-color: royalblue;
+        }
+
+        paper-tabs.blue paper-tab::shadow #ink {
+            color: royalblue;
+        }
+
+    </style>
+</head>
+<body unresolved>
+    <core-header-panel>
+        <core-toolbar>
+            <paper-tabs id="tabs" selected="paper" self-end class="blue" blue>
+                <paper-tab name="paper">Pivot Paper</paper-tab>
+                <paper-tab name="about">About</paper-tab>
+            </paper-tabs>
+        </core-toolbar>
+
+        <core-animated-pages transitions="slide-from-right">
+            <section class="page">
+                <page-pivotpaper></page-pivotpaper>
+            </section>
+            <section class="page">
+                <page-about></page-about>
+            </section>
+    </core-header-panel>
+
+    <script>
+        console.log("body loaded");
+        var tabs = document.querySelector('paper-tabs');
+        tabs.addEventListener('core-select', function () {
+            var p = document.querySelector('core-animated-pages');
+            if (tabs.selected === "about") {
+                p.selected = 1;
+            } else {
+                p.selected = 0;
+            }
+        });
+        document.addEventListener('polymer-ready', function () {
+            console.log('polymer-ready');
+        });
+    </script>
+
+</body>
+
+</html>
+                  
+
+
+<!--nv.addGraph(function () {
+                    var chart = nv.models.multiBarChart();
+                    //  .reduceXTicks(true)   //If 'false', every single x-axis tick label will be rendered.
+                    //  .rotateLabels(0)      //Angle to rotate x-axis labels.
+                    //  .showControls(true)   //Allow user to switch between 'Grouped' and 'Stacked' mode.
+                    //  .groupSpacing(0.1)    //Distance between each group of bars.
+                    //;
+
+                    chart.xAxis
+                        .showMaxMin(false)
+                        .tickFormat(function (d) { return d3.time.format('%x')(new Date(d)) });
+
+                    chart.yAxis
+                        .tickFormat(d3.format('0'));
+
+                    d3.select('#chart svg')
+                        .datum(data)
+                        .call(chart);
+
+                    nv.utils.windowResize(function () {
+                        chart.update();
+                        d3.selectAll(".nv-bar").on('click', function (d, i) {
+                                console.log(d);
+                                console.log(i);
+                            });
+
+                        }
+                    );
+
+                    return chart;
+                });-->  

@@ -2,7 +2,7 @@
 <link rel="import" href="components/paper-shadow/paper-shadow.html" />
 <link rel="import" href="article-entry.html">
 
-<polymer-element name="page-about">
+<polymer-element name="page-contact">
     <template>
         <style>
             span.line {
@@ -30,7 +30,7 @@
 
                 .card-header p {
                     margin: 0;
-                    text-overflow: ellipsis;
+                    /*text-overflow: ellipsis;*/
                     white-space: nowrap;
                     overflow: hidden;
                     /*padding-left: 10px;*/
@@ -58,22 +58,26 @@
         </style>
         <section class="container" layout vertical center>
             <paper-shadow z="2" class="card-header" layout vertical center>
-                <img src="images/pivotpaper.svg" alt="logo" />
-                <h1>PivotPaper</h1>
+             <img src="images/pivotpaper.svg" alt="logo" />
+                 <h1>PivotPaper</h1>
+
+                <h2>contact us!</h2>
                 <p>
-                    <h3>privacy policy: </h3><span>We care about your data! Therefore, no data sent to our server contains personal information about you.
-To get insights about you using PivotPaper, we are using Google Analytics.
-If you want to learn more how Google uses the provided data, see <a href="www.google.com/policies/privacy/partners/">www.google.com/policies/privacy/partners/</a>.
-</span>
+                    <span>Thomas Werkmeister<br />
+                    Stahnsdorfer Straße 152a<br />
+14482 Potsdam</span>
                 </p>
-                <p>
-                    <h3 class="line">Impressum: </h3><span>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</span>
-                </p>
+                <table><tr>
+                <td>Phone:</td>
+                <td>+4917634412247</td></tr>
+                <tr><td>E-Mail:</td>
+                <td>hello@pivotpaper.com</td>
+                </tr></table>
             </paper-shadow>
         </section>
     </template>
     <script>
-        Polymer('page-about', {
+        Polymer('page-contact', {
             publish: {
 
             },

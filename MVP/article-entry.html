@@ -86,7 +86,7 @@
             }
         </style>
 
-        <a class="card-header" layout horizontal center href="{{link}}" target="_blank">
+        <a id="anchor" class="card-header" layout horizontal center href="{{link}}" target="_blank">
             <img src="{{link | linkToImageUrl}}" alt="-"/>
             <div flex layout vertical class="divTxtContent">
                 <h2>{{title}}</h2>
@@ -110,7 +110,9 @@
                 link: ""
             },
             ready: function () {
-                ga('send', 'event', 'link', 'click', getHostName(this.link));
+                this.$.anchor.addEventListener("click", function() {
+                    ga('send', 'event', 'link', 'click', getHostName(this.link));
+                });
             },
             linkToImageUrl: function (link) {
                 if (link.indexOf("nytimes.com") >= 0) {

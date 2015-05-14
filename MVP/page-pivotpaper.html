@@ -43,6 +43,7 @@
         </style>
         <article-service id="service" hotness="{{hotness}}" articles="{{articles}}" url="entries.json"></article-service>
         <section class="container" layout vertical center>
+            <h2>Explore the Greek Financial Crisis over the course of time</h2>
             <div id="chart">
                 <canvas id="canvas" style="height: 100%; width: 100%;"/>
             </div>
@@ -69,7 +70,7 @@
             },
             ready: function () {
                 $.getJSON('testData.json', function (result) {
-                    this.statusText1 = "Select a year to start your time travel.";
+                    this.statusText1 = "Select a time frame between two years to start.";
                     var cv = this.$.canvas;
                     var ctx = cv.getContext('2d');
                     //calc the labels for the chart

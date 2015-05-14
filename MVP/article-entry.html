@@ -51,8 +51,8 @@
             }
 
             .card-header img {
-                width: 70px;
-                border-radius: 50%;
+                width: 100px;
+                /*border-radius: 50%;*/
                 margin: 10px;
             }
             
@@ -116,11 +116,39 @@
             },
             linkToImageUrl: function (link) {
                 if (link.indexOf("nytimes.com") >= 0) {
-                    return "images/newyorktimes.svg";
+                    return "images/nytimes.svg";
                 }
                 else if (link.indexOf("theguardian") >= 0) {
-                    return "images/theguardian.svg";
-                } else {
+                    return "images/guardian.svg";
+                }
+                else if (link.indexOf("forbes.com") >= 0) {
+                    return "images/forbes.svg";
+                } 
+                else if (link.indexOf("bbc.com") >= 0 || link.indexOf("bbc.co.uk") >=0) {
+                    return "images/BBC.svg";
+                }
+                else if (link.indexOf("economist.com") >= 0) {
+                    return "images/economist.svg";
+                }
+                else if (link.indexOf("oanda.com") >= 0) {
+                    return "images/Oanda-logo.svg";
+                }
+                else if (link.indexOf("cnn.com") >= 0) {
+                    return "images/cnn.svg";
+                }
+                else if (link.indexOf("bloomberg.com") >= 0) {
+                    return "images/bloomberg.svg";
+                }
+                else if (link.indexOf("spiegel.de") >= 0) {
+                    return "images/spiegel.svg";
+                }
+                else if (link.indexOf("economonitor.com") >= 0) {
+                    return "images/economonitor.png";
+                }
+                else if (link.indexOf("iie.com") >= 0) {
+                    return "images/iie.gif";
+                }
+                else {
                     return "images/pivotpaper.svg";
                 }
             }

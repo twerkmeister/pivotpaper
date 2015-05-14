@@ -35,7 +35,7 @@
   @type Array
   @default []
 -->
-<polymer-element name="article-service" attributes="articles, url">
+<polymer-element name="article-service" attributes="articles, url, urlLocal">
     <template>
         <style>
             :host {
@@ -44,36 +44,94 @@
         </style>
         <core-ajax id="ajax"
                    auto
-                   url="{{url}}"
                    on-core-response="{{articlesLoaded}}"
+                   on-core-error="{{articlesError}}"
                    handleas="json">
         </core-ajax>
     </template>
     <script>
+      /*
+      var str = "http://cdn.contentful.com/spaces/ksm7j35bqdb4/entries?content_type=1QQBcDtafaUEQSWuOGac4u&access_token=5bd02d9b007e1279c03ab3d898777261ad38f9485c526f2c09430337014a6569";
+var str2 = "http://bit.ly/1ATHUjw";
+var str3 = "http://google.com";
+
+$.getJSON('http://whateverorigin.org/get?url=' 
+          + encodeURIComponent(str2) + '&callback=?', function(data){
+	alert(data.contents);
+});
+var x = encodeURIComponent("http://cdn.contentful.com/spaces/ksm7j35bqdb4/entries?content_type=1QQBcDtafaUEQSWuOGac4u&access_token=5bd02d9b007e1279c03ab3d898777261ad38f9485c526f2c09430337014a6569")
+console.log(x);
+*/
         Polymer('article-service', {
-            created: function () {
+            created: function() {
                 this.articles = [];
-                this.url = "entries.json";
+                this.url = "";
+                this.urlLocal = "";
+            },
+            ready: function () {
+                this.loadRemote();
+            },
+            loadLocal: function () {
+                console.log("remote data failure");
+                console.log("local data");
+                this.$.ajax.url = urlLocal;
+            },
+            loadRemote: function () {
+                //try get the new data from remote on error get the local file
+                console.log("remote data");
+                try {
+                    $.getJSON(this.urlRedirect(this.url, true), function (response) {
+                        response = JSON.parse(response.contents);
+                        if (!this.parseData(response)) {
+                            this.loadLocal();
+                        };
+                        console.log("remote data success");
+                    }.bind(this))
+                        .fail(function (jqxhr, textStatus, error) {
+                            this.loadLocal();
+                        }.bind(this));
+                } catch (e) {
+                    this.loadLocal();
+                }
+            },
+            urlRedirect: function (url, crossDomain) {
+                if (crossDomain) {
+                    return "http://whateverorigin.org/get?url=" + encodeURIComponent(url) + "&callback=?";
+                }
+                return url;
+            },
+            parseData: function (response) {
+                try {
+                    // Make a copy of the loaded data
+                    var data = response.items;
+                    this.articles = [];
+                    for (var i = 0; i < data.length; ++i) {
+                        var regRes = data[i].fields.date.match(/[^\-]+/g);
+                        var entry = {
+                            link: data[i].fields.link,
+                            title: data[i].fields.title,
+                            fulltext: data[i].fields.description
+                        }
+                        try {
+                            entry.date = new Date(regRes[0], regRes[1], regRes[2]);
+                        } catch (e) {
+                            entry.date = 0;
+                        }
+                        this.articles.push(entry);
+                    }
+                    console.log("articles parsed");
+                    return true;
+                } catch (e) {
+                    console.log("article parse error");
+                    return false;
+                } 
             },
             articlesLoaded: function () {
-                // Make a copy of the loaded data
-                var response = this.$.ajax.response.items;
-                this.articles = [];
-                for (var i = 0; i < response.length; ++i) {
-                    var regRes = response[i].fields.date.match(/[^\-]+/g);
-                    var entry = {
-                        link: response[i].fields.link,
-                        title: response[i].fields.title,
-                        fulltext: response[i].fields.description
-                    }
-                    try {
-                        entry.date = new Date(regRes[0], regRes[1], regRes[2]);
-                    } catch (e) {
-                        entry.date = 0;
-                    }
-                    this.articles.push(entry);
-                }
-                console.log("articles loaded");
+                console.log("local data loaded");
+                this.parseData(this.$.ajax.response);
+            },
+            articlesError: function () {
+                console.log("local data failure");
             }
         });
     </script>

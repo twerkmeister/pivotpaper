@@ -1,40 +1,6 @@
 <link rel="import" href="./components/polymer/polymer.html">
 <link rel="import" href="./components/core-ajax/core-ajax.html">
-<!--
-  An array of post objects, with the following format:
 
-  <table border="0">
-    <tr>
-      <td><code>uid</code></td>
-      <td>Number</td>
-      <td>Unique ID for this post.</td>
-    </tr>
-     <tr>
-      <td><code>username</code></td>
-      <td>String</td>
-      <td>Poster's username.</td>
-    </tr>
-    <tr>
-      <td><code>avatar</code></td>
-      <td>String</td>
-      <td>URL for the user's avatar.</td>
-    </tr>
-    <tr>
-      <td><code>text</code></td>
-      <td>String</td>
-      <td>Post text.</td>
-    </tr>
-    <tr>
-      <td><code>favorite</code></td>
-      <td>Boolean</td>
-      <td>True if the current user favorited this post.</td>
-    </tr>
-  </table>
-
-  @attribute posts
-  @type Array
-  @default []
--->
 <polymer-element name="article-service" attributes="articles, url, urlLocal">
     <template>
         <style>
@@ -50,18 +16,6 @@
         </core-ajax>
     </template>
     <script>
-      /*
-      var str = "http://cdn.contentful.com/spaces/ksm7j35bqdb4/entries?content_type=1QQBcDtafaUEQSWuOGac4u&access_token=5bd02d9b007e1279c03ab3d898777261ad38f9485c526f2c09430337014a6569";
-var str2 = "http://bit.ly/1ATHUjw";
-var str3 = "http://google.com";
-
-$.getJSON('http://whateverorigin.org/get?url=' 
-          + encodeURIComponent(str2) + '&callback=?', function(data){
-	alert(data.contents);
-});
-var x = encodeURIComponent("http://cdn.contentful.com/spaces/ksm7j35bqdb4/entries?content_type=1QQBcDtafaUEQSWuOGac4u&access_token=5bd02d9b007e1279c03ab3d898777261ad38f9485c526f2c09430337014a6569")
-console.log(x);
-*/
         Polymer('article-service', {
             created: function() {
                 this.articles = [];
@@ -69,7 +23,7 @@ console.log(x);
                 this.urlLocal = "";
             },
             ready: function () {
-                this.loadRemote();
+                
             },
             loadLocal: function () {
                 console.log("remote data failure");
@@ -132,6 +86,10 @@ console.log(x);
             },
             articlesError: function () {
                 console.log("local data failure");
+            },
+            go: function () {
+                this.loadRemote();
+                this.$.ajax.go();
             }
         });
     </script>

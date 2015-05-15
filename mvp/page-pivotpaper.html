@@ -5,21 +5,34 @@
 <polymer-element name="page-pivotpaper">
     <template>
         <style>
-
             span.line {
                 display: inline-block;
             }
             #chart {
+                position: relative;
                 height: 400px;
                 max-height: 30vh;
                 width: 100%;
                 /*min-height: 400px;*/
             }
 
-            #chart canvas {
-                height: 100% !important;
-                width: 100% !important;
+            #canvas {
+                position: relative;
+                /*height: 100% !important;
+                width: 100% !important;*/
+                z-index: 10;
             }
+
+            #selCanvas {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                /*height: 100% !important;
+                width: 100% !important;*/
+                z-index: 1;
+            } 
 
             #list {
                 width: 100%;
@@ -30,21 +43,22 @@
                 margin: 0 20px 0 20px;
                 text-align: center;
             }
-            @media (min-width: 481px) {
+             @media (min-width: 481px) {
                 .container {
-                width: 90%;
-                margin: auto;
-            }
+                    width: 90%;
+                    margin: auto;
+                }
 
                 #status {
                     font-size: 24px;
                 }
              }
         </style>
-        <article-service id="service" hotness="{{hotness}}" articles="{{articles}}" url="http://bit.ly/1ATHUjw" urllocal="entries.json"></article-service>
+        <article-service id="service" hotness="{{hotness}}" articles="{{articles}}" url="" urllocal=""></article-service>
         <section class="container" layout vertical center>
             <h2>Explore the Greek Financial Crisis over the course of time</h2>
             <div id="chart">
+                <canvas id="selCanvas"></canvas>
                 <canvas id="canvas" style="height: 100%; width: 100%;"/>
             </div>
             <p id="status">
@@ -63,24 +77,59 @@
                 articles: [],
                 dateRange: 0,
                 statusText1: "",
-                statusText2: ""
+                statusText2: "",
+                vMilestone: false
             },
-            create: function() {
+            create: function () {
                 
             },
             ready: function () {
-                $.getJSON('testData.json', function (result) {
+                if (this.vMilestone) {
+                    this.$.service.url = "http://bit.ly/1ATHUjw";
+                    this.$.service.urllocal = "mileEntries.json";
+                } else {
+                    this.$.service.url = "http://bit.ly/1ATHUjw";
+                    this.$.service.urllocal = "yearEntries.json";
+                }
+                this.$.service.go();
+                var graphURL = this.vMilestone ? 'mileData.json' : 'yearData.json';
+                $.getJSON(graphURL, function (result) {
                     this.statusText1 = "Select a time frame between two years to start.";
+
+                    this.fitToContainer = function(canvas) {
+                        // Make it visually fill the positioned parent
+                        canvas.style.width = '100%';
+                        canvas.style.height = '100%';
+                        // ...then set the internal size to match
+                        canvas.width = canvas.offsetWidth;
+                        canvas.height = canvas.offsetHeight;
+                    }
+
+                    window.addEventListener("resize", function() {
+                        this.fitToContainer(this.$.selCanvas);
+                    }.bind(this));
+                    this.fitToContainer(this.$.selCanvas);
                     var cv = this.$.canvas;
                     var ctx = cv.getContext('2d');
                     //calc the labels for the chart
                     var chartLabels = [];
                     var chartData = [];
-                    var iterator = 0;
-                    for (var i = 0; i < result.length; i++) {
-                        var date = new Date(result[i].date);
-                        chartLabels.push(date.getUTCFullYear());
-                        chartData.push(result[i].value);
+                    var date;
+                    var iterator;
+                    if (!this.vMilestone) {
+                        iterator = 0;
+                        for (var i = 0; i < result.length; i++) {
+                            date = new Date(result[i].date);
+                            chartLabels.push(date.getUTCFullYear());
+                            chartData.push(result[i].value);
+                        }
+                    } else {
+                        iterator = 0;
+                        for (var i = 0; i < result.length; i++) {
+                            date = result[i].date;
+                            chartLabels.push(date);
+                            chartData.push(result[i].value);
+                        }
                     }
                     console.log(chartLabels);
                     console.log(chartData);
@@ -100,7 +149,13 @@
                             }
                         ]
                     };
-                    var pointSelectionRadius = (0.95 * cv.offsetWidth) / chartData.length;
+                    var pointSelectionRadius;
+                    //on Milestone view I only want to select single nodes
+                    if (this.vMilestone) {
+                        pointSelectionRadius = (0.3 * cv.offsetWidth) / chartData.length;
+                    } else {
+                        pointSelectionRadius = (0.95 * cv.offsetWidth) / chartData.length;
+                    }
                     var options = {
                         ///Boolean - Whether grid lines are shown across the chart
                         scaleShowGridLines: true,
@@ -142,7 +197,7 @@
                     };
                     var myLineChart = new Chart(ctx).Line(chartDataObject, options);
                     document.vieModel = {
-                        chart: myLineChart,
+                        chart: myLineChart,    
                         hotData: result
                     }
                     cv.onclick = function(evt) {
@@ -150,20 +205,74 @@
                         console.log(activePoints);
                         var year = 0;
                         if (activePoints.length > 0) {
-                            var date1 = parseInt(activePoints[0].label);
-                            var date2 = parseInt(activePoints[activePoints.length - 1].label);
-                            if (date1 <= 0 || date2 <= 0) return;
-                            date1 = new Date(date1, 0);
-                            if (activePoints.length > 1) {
-                                date2 = new Date(date2, 0);
+                            var selX, selX2 = 0;
+                            if (!this.vMilestone) {
+                                var date1 = parseInt(activePoints[0].label);
+                                var date2 = parseInt(activePoints[activePoints.length - 1].label);
+                                if (date1 <= 0 || date2 <= 0) return;
+                                date1 = new Date(date1, 0);
+                                if (activePoints.length > 1) {
+                                    date2 = new Date(date2, 0);
+                                } else {
+                                    //if exactly one year is selected, set endDate to end of this year
+                                    date2 = new Date(date2 + 1, 0);
+                                }
+                                this.$.articleList.startDate = date1;
+                                this.$.articleList.endDate = date2;
+                                this.statusText1 = "articles\xA0starting\xA0from";
+                                this.statusText2 = date1.toString('d-MMM-yyyy') + "\xA0to\xA0" + date2.toString('d-MMM-yyyy');
+                                selX = activePoints[0].x;
+                                selX2 = activePoints[activePoints.length - 1].x - activePoints[0].x;
                             } else {
-                                //if exactly one year is selected, set endDate to end of this year
-                                date2 = new Date(date2 + 1, 0);
+                                for (var i = 0; i < activePoints.length; i++) {
+                                    if (activePoints[i].label.indexOf("#") >= 0) {
+                                        var milestoneNr = parseInt(activePoints[i].label[1]);
+                                        var startYear, endYear;
+                                        switch (milestoneNr) {
+                                        //case 1:
+                                        //    startYear = new Date(, 0);
+                                        //    endYear = new Date(, 0);
+                                        //    break;
+                                        //case 2:
+                                        //    startYear = new Date(, 0);
+                                        //    endYear = new Date(, 0);
+                                        //    break;
+                                        //case 3:
+                                        //    startYear = new Date(, 0);
+                                        //    endYear = new Date(, 0);
+                                        //    break;
+                                        //case 4:
+                                        //    startYear = new Date(, 0);
+                                        //    endYear = new Date(, 0);
+                                        //    break;
+                                        //case 5:
+                                        //    startYear = new Date(, 0);
+                                        //    endYear = new Date(, 0);
+                                        //    break;
+                                        }
+                                        this.$.articleList.startDate = startYear;
+                                        this.$.articleList.endDate = endYear;
+                                        this.statusText1 = "articles\xA0related\xA0to\xA0";
+                                        this.statusText2 = activePoints[i].label;
+                                        selX = activePoints[0].x;
+                                        selX2 = activePoints[activePoints.length - 1].x - activePoints[0].x;
+                                    }
+                                }
                             }
-                            this.$.articleList.startDate = date1;
-                            this.$.articleList.endDate = date2;
-                            this.statusText1 = "articles\xA0starting\xA0from";
-                            this.statusText2 = date1.toString('d-MMM-yyyy') + "\xA0to\xA0" + date2.toString('d-MMM-yyyy');
+
+                            //draw the seletion rect
+                            var canvas = this.$.selCanvas;
+                            var ctx = canvas.getContext('2d');
+                            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                            var grd = ctx.createLinearGradient(0, 0, 0, canvas.height);
+                            // light blue
+                            grd.addColorStop(0, "rgba(255,194,108,1)");
+                            // dark blue
+                            grd.addColorStop(1, "rgba(255,194,108,0)");
+                            ctx.fillStyle = grd;
+                            ctx.fillRect(selX,0,selX2, canvas.height);
+                            console.log(activePoints);
                         }
                     }.bind(this);
                 }.bind(this));

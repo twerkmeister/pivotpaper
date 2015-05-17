@@ -34,8 +34,8 @@
                 //try get the new data from remote on error get the local file
                 console.log("remote data");
                 try {
-                    $.getJSON(this.urlRedirect(this.url, true), function (response) {
-                        response = JSON.parse(response.contents);
+                    $.getJSON(this.url, function (response) {
+                        //response = JSON.parse(response.contents);
                         if (!this.parseData(response)) {
                             this.loadLocal();
                         };
@@ -47,12 +47,6 @@
                 } catch (e) {
                     this.loadLocal();
                 }
-            },
-            urlRedirect: function (url, crossDomain) {
-                if (crossDomain) {
-                    return "http://whateverorigin.org/get?url=" + encodeURIComponent(url) + "&callback=?";
-                }
-                return url;
             },
             parseData: function (response) {
                 try {

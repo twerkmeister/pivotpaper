@@ -28,7 +28,7 @@
             loadLocal: function () {
                 console.log("remote data failure");
                 console.log("local data");
-                this.$.ajax.url = urlLocal;
+                this.$.ajax.url = this.urlLocal;
             },
             loadRemote: function () {
                 //try get the new data from remote on error get the local file
@@ -55,19 +55,24 @@
                 return url;
             },
             parseData: function (response) {
+                var index = 0;
+                var data = [];
                 try {
                     // Make a copy of the loaded data
-                    var data = response.items;
+                    data = response.items;
                     this.articles = [];
-                    for (var i = 0; i < data.length; ++i) {
-                        var regRes = data[i].fields.date.match(/[^\-]+/g);
+                    for (index = 0; index < data.length; ++index) {
+                        var regRes = data[index].fields.date.match(/[^\-]+/g);
                         var entry = {
-                            link: data[i].fields.link,
-                            title: data[i].fields.title,
-                            fulltext: data[i].fields.description
+                            link: data[index].fields.link,
+                            title: data[index].fields.title,
+                            fulltext: data[index].fields.description
+                        }
+                        if (entry.title.indexOf("Election") >= 0) {
+                            console.log("ja");
                         }
                         try {
-                            entry.date = new Date(regRes[0], regRes[1], regRes[2]);
+                            entry.date = new Date(regRes[0], regRes[1]-1, regRes[2]-1);
                         } catch (e) {
                             entry.date = 0;
                         }
@@ -77,18 +82,22 @@
                     return true;
                 } catch (e) {
                     console.log("article parse error");
+                    if (data.length > 0) console.log("problem article: " + data[index].fields);
                     return false;
                 } 
             },
             articlesLoaded: function () {
                 console.log("local data loaded");
-                this.parseData(this.$.ajax.response);
+                var e = this.parseData(this.$.ajax.response);
+                console.log("Parsing without errors: " + e); 
+                document.articles = this.articles;
             },
             articlesError: function () {
                 console.log("local data failure");
             },
             go: function () {
-                this.loadRemote();
+                //this.loadRemote();
+                this.loadLocal();
                 this.$.ajax.go();
             }
         });

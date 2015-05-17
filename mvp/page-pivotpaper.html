@@ -86,10 +86,10 @@
             ready: function () {
                 if (this.vMilestone) {
                     this.$.service.url = "http://bit.ly/1ATHUjw";
-                    this.$.service.urllocal = "mileEntries.json";
+                    this.$.service.urlLocal = "mileEntries.json";
                 } else {
                     this.$.service.url = "http://bit.ly/1ATHUjw";
-                    this.$.service.urllocal = "yearEntries.json";
+                    this.$.service.urlLocal = "yearEntries.json";
                 }
                 this.$.service.go();
                 var graphURL = this.vMilestone ? 'mileData.json' : 'yearData.json';

@@ -2,599 +2,10 @@
   "sys": {
     "type": "Array"
   },
-  "total": 50,
+  "total": 47,
   "skip": 0,
   "limit": 100,
   "items": [
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "6CsEDu6z28ee4MaQ2oUGo2",
-        "revision": 1,
-        "createdAt": "2015-05-07T05:22:11.480Z",
-        "updatedAt": "2015-05-07T05:22:11.480Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "Veggie Ipsum",
-        "description": "Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.\n\nGumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.",
-        "date": "2015-05-06",
-        "link": "http://veggieipsum.com/",
-        "hotness": 77
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "MANK4jq9WKwyagsMEG22S",
-        "revision": 1,
-        "createdAt": "2015-05-07T05:24:06.432Z",
-        "updatedAt": "2015-05-07T05:24:06.432Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "Bacon Ipsum",
-        "description": "Bacon ipsum dolor amet pork loin boudin brisket, cupim beef ribs shankle cow pork belly t-bone porchetta landjaeger. Alcatra kevin ribeye sirloin pork loin pork, doner strip steak flank frankfurter. Landjaeger ham andouille pork belly kielbasa, boudin rump. Bresaola prosciutto cupim sirloin frankfurter andouille tongue chicken bacon venison short ribs jowl t-bone ground round shank. Ham bacon salami doner, swine boudin bresaola pig pancetta short ribs cow kielbasa sirloin tenderloin pork chop.",
-        "date": "2006-08-11",
-        "link": "http://baconipsum.com/",
-        "hotness": 15
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "2XDpu7rIM8uC8wkaOqqwKc",
-        "revision": 2,
-        "createdAt": "2015-05-07T05:13:23.907Z",
-        "updatedAt": "2015-05-07T05:22:41.650Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "date": "1990-05-11",
-        "title": "Lorem Ipsum",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-        "link": "http://www.loremipsum.de/",
-        "hotness": 23
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "5L6VoIjNsIM4Es8quYsSmU",
-        "revision": 1,
-        "createdAt": "2015-05-09T09:33:19.434Z",
-        "updatedAt": "2015-05-09T09:33:19.434Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "Greece Moves to Sideline Varoufakis After Reform Talks Fiasco",
-        "description": "Greek Prime Minister Alexis Tsipras on Monday reshuffled his team handling talks with European and IMF lenders, a move widely seen as an effort to relegate embattled Finance Minister Yanis Varoufakis to a less active role in negotiations.",
-        "date": "2015-04-27",
-        "link": "http://www.nytimes.com/reuters/2015/04/27/world/europe/27reuters-eurozone-greece-varoufakis.html",
-        "hotness": 10
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "FF1sfKMWOY2WoOI2U06ue",
-        "revision": 1,
-        "createdAt": "2015-05-09T09:37:46.308Z",
-        "updatedAt": "2015-05-09T09:37:46.308Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "Greece Facing Election After Lawmakers Fail to Elect President",
-        "description": "ATHENS — Greek lawmakers failed to elect a new president in a decisive final round of voting on Monday, leaving the country facing a snap election that could derail the international bailout programme it needs to keep paying its bills.",
-        "date": "2014-12-29",
-        "link": "http://www.nytimes.com/reuters/2014/12/29/world/europe/29reuters-greece-vote-result.html",
-        "hotness": 50
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "5itSQbeq5iCOUuuGgyI8c4",
-        "revision": 1,
-        "createdAt": "2015-05-09T09:27:26.997Z",
-        "updatedAt": "2015-05-09T09:27:26.997Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "Alexis Tsipras: Greece has won a battle but the real difficulties lie ahead",
-        "description": "The Greek prime minister, Alexis Tsipras, has said the country has won a significant battle but has yet to win the war, in his first public reaction to the latest deal to keep the debt-stricken nation financially afloat.",
-        "date": "2015-02-21",
-        "link": "http://www.theguardian.com/business/2015/feb/21/greece-won-battle-real-difficulties-lie-ahead-alexis-tsipras",
-        "hotness": 35
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "7KMqi8lmLuKmEa4waS0SmM",
-        "revision": 1,
-        "createdAt": "2015-05-09T09:34:39.705Z",
-        "updatedAt": "2015-05-09T09:34:39.705Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "Leftwing Syriza party triumphs in European elections in Greece",
-        "description": "The election marked a turning point for Greece on Sunday with voters delivering a resounding victory for the radical left Syriza party while sending at least three neo-nazi Golden Dawn members to Brussels.",
-        "date": "2015-05-26",
-        "link": "http://www.theguardian.com/politics/2014/may/26/syriza-european-elections-greece",
-        "hotness": 40
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "6lvy2jeTdKqc2ocCmy68A2",
-        "revision": 1,
-        "createdAt": "2015-05-09T09:23:56.914Z",
-        "updatedAt": "2015-05-09T09:23:56.914Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "Greece's debt standoff: the key dates",
-        "description": "The Greek government faces a a number of crucial meetings and repayment deadlines as Athens wrangles with its creditors over bailout terms.\n\nHere are some of the key dates in the weeks and months ahead.",
-        "date": "2015-02-17",
-        "link": "http://www.theguardian.com/business/2015/feb/17/greeces-debt-standoff-the-key-dates",
-        "hotness": 20
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "5dJbRrjvjqeSIs6Wck4Cia",
-        "revision": 1,
-        "createdAt": "2015-05-09T09:25:43.412Z",
-        "updatedAt": "2015-05-09T09:25:43.412Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "Prime Minister of Greece Will Not Prolong Bailout",
-        "description": "In an address to Parliament on Sunday, Alexis Tsipras promised to carry out his campaign pledges to roll back austerity.",
-        "date": "2015-02-09",
-        "link": "http://www.nytimes.com/2015/02/09/world/europe/alexis-tsipras-greek-prime-minister-wont-seek-to-extend-bailout.html",
-        "hotness": 30
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "5okOwCZkOIoAi20OGWU8aC",
-        "revision": 1,
-        "createdAt": "2015-05-09T09:31:59.498Z",
-        "updatedAt": "2015-05-09T09:31:59.498Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "Could Greece Pivot To Russia And China?",
-        "description": "Greek Prime Minister Alexis Tsipras heads to Moscow tomorrow amongst significant noise around a potential Greek pivot towards Russia and China.",
-        "link": "http://www.forbes.com/sites/raoulruparel/2015/04/07/could-greece-pivot-to-russia-and-china/",
-        "hotness": 20,
-        "date": "2015-04-07"
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "4Yy5QbGY12A2ssmqOYsesw",
-        "revision": 1,
-        "createdAt": "2015-05-09T10:21:00.226Z",
-        "updatedAt": "2015-05-09T10:21:00.226Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "link": "http://www.economist.com/news/finance-and-economics/21600727-bond-issue-milestone-there-still-long-way-go-prodigal-son",
-        "title": "Greece’s return to the markets",
-        "description": "THE journey has been an epic one, but Greece has reached, if not the destination, at least a waymark. The last time that its government raised long-term funds was in March 2010, just weeks before the markets lost confidence in Greece altogether, forcing its first bail-out. This week the Greek government returned to the markets, raising €3 billion ($4.1 billion) in five-year bonds at a yield of just under 5% in a heavily oversubscribed issue.",
-        "date": "2014-04-12",
-        "hotness": 60
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "1dDy3GuKJocWo4quwmUMY",
-        "revision": 1,
-        "createdAt": "2015-05-09T09:54:27.790Z",
-        "updatedAt": "2015-05-09T09:54:27.790Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "description": "Greek state TV and radio were gradually pulled off the air late on Tuesday, hours after the government said it would temporarily close all state-run broadcasts and lay off about 2,500 workers as part of a cost-cutting drive demanded by the bailed-out country's international creditors.",
-        "link": "http://www.theguardian.com/world/2013/jun/11/state-broadcaster-ert-shut-down-greece",
-        "title": "Greece shuts down state broadcaster in search for new savings",
-        "date": "2013-06-11",
-        "hotness": 40
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "442CtimH8sg2QawIwoiy8u",
-        "revision": 1,
-        "createdAt": "2015-05-09T09:40:17.300Z",
-        "updatedAt": "2015-05-09T09:40:17.300Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "Vote Result in Greece Challenges More Than Austerity",
-        "link": "http://www.nytimes.com/2015/01/27/world/europe/alexis-tsipiras-greece-coalition.html",
-        "date": "2015-01-27",
-        "description": "The leftist politician created the government with a right-wing fringe party that will charge immediately into the task of reversing wrenching austerity policies.",
-        "hotness": 33
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "2fyUEUgyNGwMUamEsMkO4U",
-        "revision": 1,
-        "createdAt": "2015-05-09T09:39:08.686Z",
-        "updatedAt": "2015-05-09T09:39:08.686Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "Tsipras declares end to 'vicious cycle of austerity' after Syriza wins Greek election",
-        "description": "Here’s summary of a momentous election result for the future of Greece and Europe.",
-        "date": "2015-01-25",
-        "link": "http://www.theguardian.com/world/live/2015/jan/25/greek-election-syriza-confident-of-victory-live-updates",
-        "hotness": 70
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "KZwZph93yesOMuss0aww6",
-        "revision": 1,
-        "createdAt": "2015-05-09T09:52:03.922Z",
-        "updatedAt": "2015-05-09T09:52:03.922Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "Greek government austerity measures",
-        "description": "The Greek parliament is preparing to vote on further austerity measures to try to meet its terms for another payment under the bail-out from the European Union and the International Monetary Fund.",
-        "date": "2011-10-19",
-        "link": "http://www.bbc.com/news/business-13940431",
-        "hotness": 60
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "1zHRZSrsJSGeKWmagcMG6w",
-        "revision": 1,
-        "createdAt": "2015-05-09T10:11:56.697Z",
-        "updatedAt": "2015-05-09T10:11:56.697Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "Golden Dawn leader charged with heading a criminal gang",
-        "description": "Nikos Michaloliakos appears in court after he is arrested along with key members of his Greek neo-fascist party",
-        "date": "2013-09-28",
-        "link": "http://www.theguardian.com/world/2013/sep/28/greece-golden-dawn-leader-charged-criminal-gang",
-        "hotness": 40
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "3mRrTbXQMEs8WIgMYKCYCG",
-        "revision": 1,
-        "createdAt": "2015-05-09T10:07:56.793Z",
-        "updatedAt": "2015-05-09T10:07:56.793Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "description": "Buoyed by its meteoric domestic success, the far right party is planning to expand 'wherever there are Greeks'",
-        "title": "Greece's neo-Nazi Golden Dawn goes global with political ambitions",
-        "date": "2014-04-01",
-        "link": "http://www.theguardian.com/world/2013/apr/01/greece-golden-dawn-global-ambitions",
-        "hotness": 60
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "6KlQsdBDocMGsss6E6oa6O",
-        "revision": 1,
-        "createdAt": "2015-05-09T09:43:54.911Z",
-        "updatedAt": "2015-05-09T09:43:54.911Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "Greece paralysed by first general strike for months",
-        "link": "http://www.bbc.com/news/world-europe-30223547",
-        "date": "2014-11-27",
-        "description": "A 24-hour general strike over austerity measures has closed schools and public offices and heavily disrupted transport throughout Greece.",
-        "hotness": 40
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "4Ot5LTqEqIESuc0o260QyE",
-        "revision": 1,
-        "createdAt": "2015-05-09T09:45:42.011Z",
-        "updatedAt": "2015-05-09T09:45:42.011Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "link": "http://www.bbc.com/news/business-26171213",
-        "title": "Greece jobless rate hits new record of 28%",
-        "description": "The jobless rate in Greece reached a record high of 28% in November, according to newly released government figures.",
-        "date": "2014-02-03",
-        "hotness": 45
-      }
-    },
     {
       "sys": {
         "space": {
@@ -1170,265 +581,17 @@
             "id": "1QQBcDtafaUEQSWuOGac4u"
           }
         },
-        "id": "EmgrurhxHEKyQ4WOSU4Ou",
-        "revision": 1,
-        "createdAt": "2015-05-10T06:47:17.890Z",
-        "updatedAt": "2015-05-10T06:47:17.890Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "link": "http://www.nytimes.com/1997/01/13/business/worldbusiness/13iht-euro.t.html",
-        "hotness": 50,
-        "title": "Euro Introduction Comes With a Big Price Tag",
-        "date": "1997-01-13",
-        "description": "Operational problems of Euro introduction"
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "39OZfTsJFmakkGSeQIuicY",
-        "revision": 1,
-        "createdAt": "2015-05-10T06:49:06.333Z",
-        "updatedAt": "2015-05-10T06:49:06.333Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "link": "http://www.nytimes.com/1999/01/04/business/outlook-1999-international-with-euro-europe-reinvents-itself.html",
-        "hotness": 50,
-        "description": "Introduction",
-        "title": "Europe Reinvents Itself",
-        "date": "1999-01-04"
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "1dn59Z9bNuwm88KiIukaoy",
-        "revision": 1,
-        "createdAt": "2015-05-10T07:01:00.943Z",
-        "updatedAt": "2015-05-10T07:01:00.943Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "link": "http://www.bloomberg.com/news/articles/2011-05-26/greece-cheated-to-join-euro-sanctions-since-were-too-soft-issing-says",
-        "title": "Greece cheated to join the Euro",
-        "hotness": 50,
-        "date": "2011-05-27",
-        "description": "How Greece joined the Euro"
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "5xEvdzjezSaU4QM06wQwGS",
-        "revision": 1,
-        "createdAt": "2015-05-10T06:52:13.759Z",
-        "updatedAt": "2015-05-10T06:52:13.759Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "link": "http://www.spiegel.de/international/europe/the-ticking-euro-bomb-how-a-good-idea-became-a-tragedy-a-790138-3.html",
-        "title": "How a Good Idea Became a Tragedy",
-        "description": "The critics of the Euro",
-        "date": "2011-10-05",
-        "hotness": 50
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "5aDAWvwrMckoagA2yyi28S",
-        "revision": 1,
-        "createdAt": "2015-05-10T06:55:06.469Z",
-        "updatedAt": "2015-05-10T06:55:06.469Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "Euro love is not enough",
-        "description": "Critics",
-        "date": "1999-01-02",
-        "link": "http://www.theguardian.com/business/1999/jan/02/theeuro.europeanunion",
-        "hotness": 50
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "2AHXK3S2ac0GGyqIAKqcua",
-        "revision": 2,
-        "createdAt": "2015-05-10T06:53:56.972Z",
-        "updatedAt": "2015-05-10T06:54:02.331Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "The Euro has landed",
-        "link": "http://www.theguardian.com/world/1998/dec/31/euro.eu",
-        "hotness": 50,
-        "date": "1998-12-31",
-        "description": "Overview of introduction"
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "66zrkJ1AJ20uqGOOGuwa20",
-        "revision": 1,
-        "createdAt": "2015-05-10T06:58:07.116Z",
-        "updatedAt": "2015-05-10T06:58:07.116Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "Greece joins Euro zone",
-        "link": "http://news.bbc.co.uk/2/hi/business/1095783.stm",
-        "date": "2001-01-01",
-        "hotness": 50,
-        "description": "Critics "
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
-        "id": "5Nzl5VDXocOYqsywiwMcyW",
-        "revision": 1,
-        "createdAt": "2015-05-10T07:09:23.493Z",
-        "updatedAt": "2015-05-10T07:09:23.493Z",
-        "locale": "en-US"
-      },
-      "fields": {
-        "link": "http://www.theguardian.com/global/2012/apr/26/greece-europe-north-south-divide",
-        "title": "Greece did not cause the euro crisis",
-        "date": "2012-04-26",
-        "hotness": 50,
-        "description": "\"Yes, my country was the spark, but it merely exposed the inherent flaws within the eurozone\""
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ksm7j35bqdb4"
-          }
-        },
-        "type": "Entry",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "1QQBcDtafaUEQSWuOGac4u"
-          }
-        },
         "id": "2Ss5D6AkAwccuGkmoYCc6E",
-        "revision": 1,
+        "revision": 2,
         "createdAt": "2015-05-10T07:34:29.126Z",
-        "updatedAt": "2015-05-10T07:34:29.126Z",
+        "updatedAt": "2015-05-15T08:29:41.070Z",
         "locale": "en-US"
       },
       "fields": {
         "link": "http://www.economonitor.com/dolanecon/2011/08/28/how-germany-free-rides-on-the-euro/",
         "title": "How Germany Free-Rides the Euro",
-        "description": "Development in Germany",
-        "date": "2011-08-22",
+        "description": "- Risk: Fiscally undisciplined peripheral governments seeking political gain by running budget deficits at the expense of their euro partners; but Germany is also, in its own way, free-riding on the common currency\n- The free-rider problem arises whenever someone is able to capture the full benefits of an action while shifting all or part of the the costs to others\n- The euro needs a better set of fiscal policy rules to replace the inadequate and unenforceable rules of the growth and stability pact\n- The euro undoubtedly needs more fiscal centralism\n- Germany needs to think about the possibility that reforming the euro area in a way that makes it sustainable could also require a rebalancing its own economy ",
+        "date": "1999-08-22",
         "hotness": 50
       }
     },
@@ -1450,17 +613,48 @@
           }
         },
         "id": "32tOA5SJ2ESsCuwEmGeK2U",
-        "revision": 1,
+        "revision": 2,
         "createdAt": "2015-05-10T07:36:24.168Z",
-        "updatedAt": "2015-05-10T07:36:24.168Z",
+        "updatedAt": "2015-05-15T08:23:26.039Z",
         "locale": "en-US"
       },
       "fields": {
         "title": "The Euro Payoff",
-        "description": "Germany´s economic advantages",
+        "description": "- An expanded Euro Area remains so much in Germany's direct interest that it is worth financing, if not paying for\n- Germany, as the euro exportmeister, has a wider and deeper range of trade in its own currency now than it did under the DM\n- The Euro provides a platform for Germany to stand with the Americans, Chinese, Japanese, and other rising economic powers in international negotiations\n- The German economy gets a direct economic payoff from having a large monetary union, to its federal treasury as well as German businesses' and consumers' bottom lines",
         "link": "http://www.iie.com/publications/papers/paper.cfm?ResearchID=1778",
         "hotness": 50,
-        "date": "2011-04-11"
+        "date": "1999-04-11"
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ksm7j35bqdb4"
+          }
+        },
+        "type": "Entry",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "1QQBcDtafaUEQSWuOGac4u"
+          }
+        },
+        "id": "EmgrurhxHEKyQ4WOSU4Ou",
+        "revision": 2,
+        "createdAt": "2015-05-10T06:47:17.890Z",
+        "updatedAt": "2015-05-15T08:13:20.033Z",
+        "locale": "en-US"
+      },
+      "fields": {
+        "link": "http://www.nytimes.com/1997/01/13/business/worldbusiness/13iht-euro.t.html",
+        "hotness": 50,
+        "title": "Euro Introduction Comes With a Big Price Tag",
+        "date": "1997-01-13",
+        "description": "- Describes the operational challenges and opportunities of the Euro introduction\n- Small companies can expand to all European countries without any currency risk; leads to increasing variety of products for the customers\n- Estimated costs of Euro introduction: $33.5bn\n- In Germany, people believe that their savings will be less secure in Euros than in Deutsche Marks"
       }
     },
     {
@@ -1481,9 +675,9 @@
           }
         },
         "id": "2r8LZJV6wcogcYYeuUqsyw",
-        "revision": 1,
+        "revision": 2,
         "createdAt": "2015-05-10T07:04:23.354Z",
-        "updatedAt": "2015-05-10T07:04:23.354Z",
+        "updatedAt": "2015-05-15T08:42:33.917Z",
         "locale": "en-US"
       },
       "fields": {
@@ -1491,7 +685,69 @@
         "title": "EU Invites Greece to Join The Single Currency Fold",
         "date": "2000-06-20",
         "hotness": 50,
-        "description": "Overview"
+        "description": "- Heads of government formally admitted Greece, the poorest country in the European Union, as the twelfth member of the European single currency on Monday\n- But EU finance ministers now found it had cut inflation, public deficits and debts to within the limits of the so-called \"convergence criteria\" needed for membership of the single currency\n- Greece's economy still has a long way to go before it catches up with the rest of the community, where economic output per head is on average 30 percent higher"
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ksm7j35bqdb4"
+          }
+        },
+        "type": "Entry",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "1QQBcDtafaUEQSWuOGac4u"
+          }
+        },
+        "id": "5Nzl5VDXocOYqsywiwMcyW",
+        "revision": 2,
+        "createdAt": "2015-05-10T07:09:23.493Z",
+        "updatedAt": "2015-05-15T08:39:49.755Z",
+        "locale": "en-US"
+      },
+      "fields": {
+        "link": "http://www.theguardian.com/global/2012/apr/26/greece-europe-north-south-divide",
+        "title": "Greece did not cause the euro crisis",
+        "date": "2001-04-26",
+        "hotness": 50,
+        "description": "- In the mid-1990s, Greece made a formidable effort to meet the convergence criteria\n- Greece's performance was also positive with regard to the other nominal convergence criteria (inflation rate, long-term interest rates, public debt and exchange rate)\n- Greece did not supposedly falsified its economic statistics in order to gain EMU entry\n- Greece sparked the eurozone crisis but was not its cause"
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ksm7j35bqdb4"
+          }
+        },
+        "type": "Entry",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "1QQBcDtafaUEQSWuOGac4u"
+          }
+        },
+        "id": "1dn59Z9bNuwm88KiIukaoy",
+        "revision": 2,
+        "createdAt": "2015-05-10T07:01:00.943Z",
+        "updatedAt": "2015-05-15T08:46:03.231Z",
+        "locale": "en-US"
+      },
+      "fields": {
+        "link": "http://www.bloomberg.com/news/articles/2011-05-26/greece-cheated-to-join-euro-sanctions-since-were-too-soft-issing-says",
+        "title": "Greece cheated to join the Euro",
+        "hotness": 50,
+        "date": "2001-05-27",
+        "description": "- Greece was only able to join the euro through deception \n- There should have been better monitoring, better scrutiny and more sanctioning\n- European Commission reports have since revealed Greece’s budget hasn’t been within the 3 percent limit a single year since its accession\n"
       }
     },
     {
@@ -1512,15 +768,15 @@
           }
         },
         "id": "46x3D1b77yg8UwwumYmoMO",
-        "revision": 1,
+        "revision": 2,
         "createdAt": "2015-05-10T07:14:02.326Z",
-        "updatedAt": "2015-05-10T07:14:02.326Z",
+        "updatedAt": "2015-05-15T08:34:30.755Z",
         "locale": "en-US"
       },
       "fields": {
         "title": "Greece joining euro was a mistake",
-        "description": "Response of Merkel",
-        "date": "2013-08-28",
+        "description": "- Greece should never have been allowed to join the euro, German Chancellor Angela Merkel said\n- After Greece adopted the euro in 2001, public spending and government borrowing soared, leaving the country unable to pay its way when the global financial crisis hit",
+        "date": "2001-08-28",
         "link": "http://money.cnn.com/2013/08/28/news/economy/merkel-greece-euro/",
         "hotness": 50
       }
@@ -1543,17 +799,668 @@
           }
         },
         "id": "4ZEqbakDXyiuoKAS4mgeyU",
-        "revision": 1,
+        "revision": 2,
         "createdAt": "2015-05-10T07:30:18.948Z",
-        "updatedAt": "2015-05-10T07:30:18.948Z",
+        "updatedAt": "2015-05-15T08:32:26.333Z",
         "locale": "en-US"
       },
       "fields": {
         "title": "Historical exchange rate USD EUR",
         "link": "http://www.oanda.com/lang/de/currency/historical-rates/",
-        "description": "Historical exchange rate USD EUR",
-        "date": "2015-05-10",
+        "description": "- Historical exchange rate USD EUR",
+        "date": "1999-05-10",
         "hotness": 50
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ksm7j35bqdb4"
+          }
+        },
+        "type": "Entry",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "1QQBcDtafaUEQSWuOGac4u"
+          }
+        },
+        "id": "5xEvdzjezSaU4QM06wQwGS",
+        "revision": 2,
+        "createdAt": "2015-05-10T06:52:13.759Z",
+        "updatedAt": "2015-05-15T09:12:01.531Z",
+        "locale": "en-US"
+      },
+      "fields": {
+        "link": "http://www.spiegel.de/international/europe/the-ticking-euro-bomb-how-a-good-idea-became-a-tragedy-a-790138-3.html",
+        "title": "How a Good Idea Became a Tragedy",
+        "description": "- In 1992, 62 German professors issued a joint warning against introducing the euro: The way the Euro was structured, would \"expose Western Europe to strong economic fluctuations, which, in the foreseeable future, could lead to a political acid test.\"\n- Despite all the declarations of intent in Maastricht, the 12 new euro countries drove up their debt by more than €600 billion in the five years of preparations for the introduction of the euro\n- The only problem, as soon became apparent, was that the Europeans had a tendency to betray their own ideals",
+        "date": "1999-10-05",
+        "hotness": 50
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ksm7j35bqdb4"
+          }
+        },
+        "type": "Entry",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "1QQBcDtafaUEQSWuOGac4u"
+          }
+        },
+        "id": "5aDAWvwrMckoagA2yyi28S",
+        "revision": 2,
+        "createdAt": "2015-05-10T06:55:06.469Z",
+        "updatedAt": "2015-05-15T09:05:34.303Z",
+        "locale": "en-US"
+      },
+      "fields": {
+        "title": "Euro love is not enough",
+        "description": "- The EU is the product of intelligent - although frequently less than enlightened - self-interest, usually defined in national terms\n- For Germany it provided post-war reconciliation and westward links at a time when its eastern border was part of the Iron Curtain\n- Broadening membership of the community will also increase pressure on regional and structural funds' budgets",
+        "date": "1999-01-02",
+        "link": "http://www.theguardian.com/business/1999/jan/02/theeuro.europeanunion",
+        "hotness": 50
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ksm7j35bqdb4"
+          }
+        },
+        "type": "Entry",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "1QQBcDtafaUEQSWuOGac4u"
+          }
+        },
+        "id": "66zrkJ1AJ20uqGOOGuwa20",
+        "revision": 2,
+        "createdAt": "2015-05-10T06:58:07.116Z",
+        "updatedAt": "2015-05-15T09:01:53.454Z",
+        "locale": "en-US"
+      },
+      "fields": {
+        "title": "Greece joins Euro zone",
+        "link": "http://news.bbc.co.uk/2/hi/business/1095783.stm",
+        "date": "2001-01-01",
+        "hotness": 50,
+        "description": "- The president of the European Central Bank, Wim Duisenberg, warned that Greece still had a lot of work to do to improve its economy and bring inflation under control\n- To qualify for euro membership, the Greek Government had to adopt a tough austerity programme, making deep cuts in public spending\n- Some investors have said they are worried that weaker economies may be allowed in without complying fully with membership conditions\n- For the eurozone as a whole, Greek membership will not make a huge difference"
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ksm7j35bqdb4"
+          }
+        },
+        "type": "Entry",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "1QQBcDtafaUEQSWuOGac4u"
+          }
+        },
+        "id": "2AHXK3S2ac0GGyqIAKqcua",
+        "revision": 3,
+        "createdAt": "2015-05-10T06:53:56.972Z",
+        "updatedAt": "2015-05-15T09:08:05.646Z",
+        "locale": "en-US"
+      },
+      "fields": {
+        "title": "The Euro has landed",
+        "link": "http://www.theguardian.com/world/1998/dec/31/euro.eu",
+        "hotness": 50,
+        "date": "1998-12-31",
+        "description": "- The finance ministers of the 11 countries joining monetary union will lock their currencies together at an irrevocably fixed rate\n- The main structural weakness of the experiment is that the 'one cap for all' approach to interest rates could lead to serious fissures among Euroland countries \n"
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ksm7j35bqdb4"
+          }
+        },
+        "type": "Entry",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "1QQBcDtafaUEQSWuOGac4u"
+          }
+        },
+        "id": "39OZfTsJFmakkGSeQIuicY",
+        "revision": 3,
+        "createdAt": "2015-05-10T06:49:06.333Z",
+        "updatedAt": "2015-05-16T09:59:48.436Z",
+        "locale": "en-US"
+      },
+      "fields": {
+        "link": "http://www.nytimes.com/1999/01/04/business/outlook-1999-international-with-euro-europe-reinvents-itself.html",
+        "hotness": 50,
+        "description": "- After years of political squabbling, arduous negotiations and painful economic preparation, 11 European nations are opening for business today with a new common currency: the euro\n\n- Most economists have cut their aggregate growth estimates for the 11 countries in Euroland from more than 3 percent to about 2.5 percent or less\n\n- As a result, baseline interest rates are now mostly at 3 percent from Madrid to Frankfurt for the first time in European history\n",
+        "title": "Europe Reinvents Itself",
+        "date": "1999-01-04"
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ksm7j35bqdb4"
+          }
+        },
+        "type": "Entry",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "1QQBcDtafaUEQSWuOGac4u"
+          }
+        },
+        "id": "1dDy3GuKJocWo4quwmUMY",
+        "revision": 2,
+        "createdAt": "2015-05-09T09:54:27.790Z",
+        "updatedAt": "2015-05-17T13:11:43.388Z",
+        "locale": "en-US"
+      },
+      "fields": {
+        "description": "- Greek state TV and radio were pulled off air laying off about 2,500 workers\n- This measure is part of a bigger commitment to cut 15000 state jobs by 2015\n- The broadcaster has been seen as producing high quality content, but also using manyfold of the ressources of private broadcasters\n",
+        "link": "http://www.theguardian.com/world/2013/jun/11/state-broadcaster-ert-shut-down-greece",
+        "title": "Greece shuts down state broadcaster in search for new savings",
+        "date": "2013-06-11",
+        "hotness": 40
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ksm7j35bqdb4"
+          }
+        },
+        "type": "Entry",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "1QQBcDtafaUEQSWuOGac4u"
+          }
+        },
+        "id": "4Yy5QbGY12A2ssmqOYsesw",
+        "revision": 2,
+        "createdAt": "2015-05-09T10:21:00.226Z",
+        "updatedAt": "2015-05-17T13:07:47.402Z",
+        "locale": "en-US"
+      },
+      "fields": {
+        "link": "http://www.economist.com/news/finance-and-economics/21600727-bond-issue-milestone-there-still-long-way-go-prodigal-son",
+        "title": "Greece’s return to the markets",
+        "description": "- Greece issued it's first government bonds since 2010, raising €3 Billion\n- Debt is at 175% of GDP this year, planned to be at 124% as of 2020\n- Greece had a small budget surplus of 1.5% of GDP in 2013\n- To meet plans, budget surplus needs to rise to 4.5 % of GDP in 2016",
+        "date": "2014-04-12",
+        "hotness": 60
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ksm7j35bqdb4"
+          }
+        },
+        "type": "Entry",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "1QQBcDtafaUEQSWuOGac4u"
+          }
+        },
+        "id": "3mRrTbXQMEs8WIgMYKCYCG",
+        "revision": 2,
+        "createdAt": "2015-05-09T10:07:56.793Z",
+        "updatedAt": "2015-05-17T13:11:12.488Z",
+        "locale": "en-US"
+      },
+      "fields": {
+        "description": "- According to polls Golden Dawn is Greece's third political force and fastest growing one\n- Back in 2009 the party only had 0.29% of the vote\n- The party is setting up branches \"wherever there are Greeks\"",
+        "title": "Greece's neo-Nazi Golden Dawn goes global with political ambitions",
+        "date": "2013-04-01",
+        "link": "http://www.theguardian.com/world/2013/apr/01/greece-golden-dawn-global-ambitions",
+        "hotness": 60
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ksm7j35bqdb4"
+          }
+        },
+        "type": "Entry",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "1QQBcDtafaUEQSWuOGac4u"
+          }
+        },
+        "id": "4Ot5LTqEqIESuc0o260QyE",
+        "revision": 2,
+        "createdAt": "2015-05-09T09:45:42.011Z",
+        "updatedAt": "2015-05-17T13:13:18.304Z",
+        "locale": "en-US"
+      },
+      "fields": {
+        "link": "http://www.bbc.com/news/business-26171213",
+        "title": "Greece jobless rate hits new record of 28%",
+        "description": "- unemployment rate of people under 25 raised to 61.4%\n- Due to austerity measures the greek economy shrank by a quarter over the last four years\n- Those unemployment rates are more than twice the average rate in the eurozone\n",
+        "date": "2014-02-13",
+        "hotness": 45
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ksm7j35bqdb4"
+          }
+        },
+        "type": "Entry",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "1QQBcDtafaUEQSWuOGac4u"
+          }
+        },
+        "id": "1zHRZSrsJSGeKWmagcMG6w",
+        "revision": 2,
+        "createdAt": "2015-05-09T10:11:56.697Z",
+        "updatedAt": "2015-05-17T13:09:08.777Z",
+        "locale": "en-US"
+      },
+      "fields": {
+        "title": "Golden Dawn leader charged with heading a criminal gang",
+        "description": "- Golden Dawn leader and 5 out of 18 MPs put to trial for allegations of murder, extortion and money laundering\n",
+        "date": "2013-09-28",
+        "link": "http://www.theguardian.com/world/2013/sep/28/greece-golden-dawn-leader-charged-criminal-gang",
+        "hotness": 40
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ksm7j35bqdb4"
+          }
+        },
+        "type": "Entry",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "1QQBcDtafaUEQSWuOGac4u"
+          }
+        },
+        "id": "KZwZph93yesOMuss0aww6",
+        "revision": 2,
+        "createdAt": "2015-05-09T09:52:03.922Z",
+        "updatedAt": "2015-05-17T13:12:34.605Z",
+        "locale": "en-US"
+      },
+      "fields": {
+        "title": "Greek government austerity measures",
+        "description": "- Overview of past and planned taxation increases, public sector cuts, cuts in benefits, privatisations and labour market reforms\n",
+        "date": "2011-10-19",
+        "link": "http://www.bbc.com/news/business-13940431",
+        "hotness": 60
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ksm7j35bqdb4"
+          }
+        },
+        "type": "Entry",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "1QQBcDtafaUEQSWuOGac4u"
+          }
+        },
+        "id": "5dJbRrjvjqeSIs6Wck4Cia",
+        "revision": 2,
+        "createdAt": "2015-05-09T09:25:43.412Z",
+        "updatedAt": "2015-05-17T13:20:11.431Z",
+        "locale": "en-US"
+      },
+      "fields": {
+        "title": "Prime Minister of Greece Will Not Prolong Bailout",
+        "description": "- The Syriza government will not seek extension of the bailout programme\n- Instead it wants to close the financing gap by issuing treasury bills, but those need approval by the European Central Bank\n- Tsipras wants tax cuts for low incomes and an increased minimum wage\n- Greece will demand World War II reparations from Germany\n- Tsipras and Varoufakis failed to win support for a debt writedown with their European partners\n",
+        "date": "2015-02-09",
+        "link": "http://www.nytimes.com/2015/02/09/world/europe/alexis-tsipras-greek-prime-minister-wont-seek-to-extend-bailout.html",
+        "hotness": 30
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ksm7j35bqdb4"
+          }
+        },
+        "type": "Entry",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "1QQBcDtafaUEQSWuOGac4u"
+          }
+        },
+        "id": "5okOwCZkOIoAi20OGWU8aC",
+        "revision": 2,
+        "createdAt": "2015-05-09T09:31:59.498Z",
+        "updatedAt": "2015-05-17T13:18:57.859Z",
+        "locale": "en-US"
+      },
+      "fields": {
+        "title": "Could Greece Pivot To Russia And China?",
+        "description": "- Russia is unlikely to pour large amounts of money into the EU country Greece\n- Sanctions hinder the possible agreements with Russia, but Greece could vote against extending sanctions\n- China might be interested in buying undervalued strategic assets, but less so in a bailout\n",
+        "link": "http://www.forbes.com/sites/raoulruparel/2015/04/07/could-greece-pivot-to-russia-and-china/",
+        "hotness": 20,
+        "date": "2015-04-07"
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ksm7j35bqdb4"
+          }
+        },
+        "type": "Entry",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "1QQBcDtafaUEQSWuOGac4u"
+          }
+        },
+        "id": "442CtimH8sg2QawIwoiy8u",
+        "revision": 2,
+        "createdAt": "2015-05-09T09:40:17.300Z",
+        "updatedAt": "2015-05-17T13:14:46.372Z",
+        "locale": "en-US"
+      },
+      "fields": {
+        "title": "Vote Result in Greece Challenges More Than Austerity",
+        "link": "http://www.nytimes.com/2015/01/27/world/europe/alexis-tsipiras-greece-coalition.html",
+        "date": "2015-01-27",
+        "description": "- Both far left and far right parties are gaining traction in Europe\n- Syriza's equivalent in Spain is Podemos\n- Italy hopes for Greece to weaken Europe's current strictness with balancing budgets\n",
+        "hotness": 33
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ksm7j35bqdb4"
+          }
+        },
+        "type": "Entry",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "1QQBcDtafaUEQSWuOGac4u"
+          }
+        },
+        "id": "5L6VoIjNsIM4Es8quYsSmU",
+        "revision": 2,
+        "createdAt": "2015-05-09T09:33:19.434Z",
+        "updatedAt": "2015-05-17T13:17:44.509Z",
+        "locale": "en-US"
+      },
+      "fields": {
+        "title": "Greece Moves to Sideline Varoufakis After Reform Talks Fiasco",
+        "description": "- Tsakalotos appointed as the coordinator for negotiations with international lenders\n- Euro zone officials welcomed the decision",
+        "date": "2015-04-27",
+        "link": "http://www.nytimes.com/reuters/2015/04/27/world/europe/27reuters-eurozone-greece-varoufakis.html",
+        "hotness": 10
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ksm7j35bqdb4"
+          }
+        },
+        "type": "Entry",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "1QQBcDtafaUEQSWuOGac4u"
+          }
+        },
+        "id": "5itSQbeq5iCOUuuGgyI8c4",
+        "revision": 2,
+        "createdAt": "2015-05-09T09:27:26.997Z",
+        "updatedAt": "2015-05-17T13:19:28.070Z",
+        "locale": "en-US"
+      },
+      "fields": {
+        "title": "Alexis Tsipras: Greece has won a battle but the real difficulties lie ahead",
+        "description": "- Bailout programme extended for another 4 months, giving the greece government additional time\n- The government reneged demands for a writedown of its debt loan",
+        "date": "2015-02-21",
+        "link": "http://www.theguardian.com/business/2015/feb/21/greece-won-battle-real-difficulties-lie-ahead-alexis-tsipras",
+        "hotness": 35
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ksm7j35bqdb4"
+          }
+        },
+        "type": "Entry",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "1QQBcDtafaUEQSWuOGac4u"
+          }
+        },
+        "id": "7KMqi8lmLuKmEa4waS0SmM",
+        "revision": 2,
+        "createdAt": "2015-05-09T09:34:39.705Z",
+        "updatedAt": "2015-05-17T13:16:56.045Z",
+        "locale": "en-US"
+      },
+      "fields": {
+        "title": "Leftwing Syriza party triumphs in European elections in Greece",
+        "description": "- Anti-austerity party Syriza strongest in european elections in greece, 4 points over New Democracy\n- The far right Golden Dawn party has about 9.37% of the vote and sends 3 members to the European Parliament\n",
+        "date": "2014-05-26",
+        "link": "http://www.theguardian.com/politics/2014/may/26/syriza-european-elections-greece",
+        "hotness": 40
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ksm7j35bqdb4"
+          }
+        },
+        "type": "Entry",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "1QQBcDtafaUEQSWuOGac4u"
+          }
+        },
+        "id": "FF1sfKMWOY2WoOI2U06ue",
+        "revision": 2,
+        "createdAt": "2015-05-09T09:37:46.308Z",
+        "updatedAt": "2015-05-17T13:16:28.468Z",
+        "locale": "en-US"
+      },
+      "fields": {
+        "title": "Greece Facing Election After Lawmakers Fail to Elect President",
+        "description": "- The third round of presidential elections ended without a winner\n- A general election must now be held\n- Syriza is leading in polls",
+        "date": "2014-12-29",
+        "link": "http://www.nytimes.com/reuters/2014/12/29/world/europe/29reuters-greece-vote-result.html",
+        "hotness": 50
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ksm7j35bqdb4"
+          }
+        },
+        "type": "Entry",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "1QQBcDtafaUEQSWuOGac4u"
+          }
+        },
+        "id": "6KlQsdBDocMGsss6E6oa6O",
+        "revision": 2,
+        "createdAt": "2015-05-09T09:43:54.911Z",
+        "updatedAt": "2015-05-17T13:14:01.531Z",
+        "locale": "en-US"
+      },
+      "fields": {
+        "title": "Greece paralysed by first general strike for months",
+        "link": "http://www.bbc.com/news/world-europe-30223547",
+        "date": "2014-11-27",
+        "description": "- 24h general strike was held closing schools, public transport and public offices\n- Greeks are angry for austerity measures and the dramatic unemployment rates of about 26%\n",
+        "hotness": 40
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ksm7j35bqdb4"
+          }
+        },
+        "type": "Entry",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "1QQBcDtafaUEQSWuOGac4u"
+          }
+        },
+        "id": "2fyUEUgyNGwMUamEsMkO4U",
+        "revision": 2,
+        "createdAt": "2015-05-09T09:39:08.686Z",
+        "updatedAt": "2015-05-17T13:15:52.104Z",
+        "locale": "en-US"
+      },
+      "fields": {
+        "title": "Tsipras declares end to 'vicious cycle of austerity' after Syriza wins Greek election",
+        "description": "- Summary of the Greek election results",
+        "date": "2015-01-25",
+        "link": "http://www.theguardian.com/world/live/2015/jan/25/greek-election-syriza-confident-of-victory-live-updates",
+        "hotness": 70
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ksm7j35bqdb4"
+          }
+        },
+        "type": "Entry",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "1QQBcDtafaUEQSWuOGac4u"
+          }
+        },
+        "id": "6lvy2jeTdKqc2ocCmy68A2",
+        "revision": 2,
+        "createdAt": "2015-05-09T09:23:56.914Z",
+        "updatedAt": "2015-05-17T13:20:50.719Z",
+        "locale": "en-US"
+      },
+      "fields": {
+        "title": "Greece's debt standoff: the key dates",
+        "description": "- Summary of important meetings and debt payback deadlines\n",
+        "date": "2015-02-17",
+        "link": "http://www.theguardian.com/business/2015/feb/17/greeces-debt-standoff-the-key-dates",
+        "hotness": 20
       }
     }
   ]

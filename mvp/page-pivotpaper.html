@@ -229,26 +229,34 @@
                                         var milestoneNr = parseInt(activePoints[i].label[1]);
                                         var startYear, endYear;
                                         switch (milestoneNr) {
-                                        //case 1:
-                                        //    startYear = new Date(, 0);
-                                        //    endYear = new Date(, 0);
-                                        //    break;
-                                        //case 2:
-                                        //    startYear = new Date(, 0);
-                                        //    endYear = new Date(, 0);
-                                        //    break;
-                                        //case 3:
-                                        //    startYear = new Date(, 0);
-                                        //    endYear = new Date(, 0);
-                                        //    break;
-                                        //case 4:
-                                        //    startYear = new Date(, 0);
-                                        //    endYear = new Date(, 0);
-                                        //    break;
-                                        //case 5:
-                                        //    startYear = new Date(, 0);
-                                        //    endYear = new Date(, 0);
-                                        //    break;
+                                        case 1:
+                                            startYear = new Date(1999, 0);
+                                            endYear = new Date(2001, 0);
+                                            break;
+                                        case 2:
+                                            startYear = new Date(2001, 0);
+                                            endYear = new Date(2009, 0);
+                                            break;
+                                        case 3:
+                                            startYear = new Date(2009, 0);
+                                            endYear = new Date(2009, 12);
+                                            break;
+                                        case 4:
+                                            startYear = new Date(2009, 12);
+                                            endYear = new Date(2010, 0);
+                                            break;
+                                        case 5:
+                                            startYear = new Date(2010, 0);
+                                            endYear = new Date(2012, 0);
+                                            break;
+                                        case 6:
+                                            startYear = new Date(2012, 0);
+                                            endYear = new Date(2015, 0);
+                                            break;
+                                        case 7:
+                                            startYear = new Date(2015, 0);
+                                            endYear = new Date(2015, 12);
+                                            break;
                                         }
                                         this.$.articleList.startDate = startYear;
                                         this.$.articleList.endDate = endYear;

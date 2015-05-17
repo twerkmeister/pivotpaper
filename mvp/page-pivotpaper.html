@@ -85,13 +85,12 @@
             },
             ready: function () {
                 if (this.vMilestone) {
-                    this.$.service.url = "http://bit.ly/1ATHUjw";
+                    this.$.service.url = "https://cdn.contentful.com/spaces/ksm7j35bqdb4/entries?content_type=1QQBcDtafaUEQSWuOGac4u&access_token=5bd02d9b007e1279c03ab3d898777261ad38f9485c526f2c09430337014a6569";
                     this.$.service.urlLocal = "mileEntries.json";
                 } else {
-                    this.$.service.url = "http://bit.ly/1ATHUjw";
+                    this.$.service.url = "https://cdn.contentful.com/spaces/ksm7j35bqdb4/entries?content_type=1QQBcDtafaUEQSWuOGac4u&access_token=5bd02d9b007e1279c03ab3d898777261ad38f9485c526f2c09430337014a6569";
                     this.$.service.urlLocal = "yearEntries.json";
                 }
-                this.$.service.url = "https://cdn.contentful.com/spaces/ksm7j35bqdb4/entries?content_type=1QQBcDtafaUEQSWuOGac4u&access_token=5bd02d9b007e1279c03ab3d898777261ad38f9485c526f2c09430337014a6569"
                 this.$.service.go();
                 var graphURL = this.vMilestone ? 'mileData.json' : 'yearData.json';
                 $.getJSON(graphURL, function (result) {

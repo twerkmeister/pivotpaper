@@ -1,8 +1,9 @@
 [
-    { "date":"#1 Milestone", "value":42 },
-    { "date":"#2 Milestone", "value":42 },
-    { "date":"#3 Milestone", "value":42 },
-    { "date":"#4 Milestone", "value":42 },
-    { "date":"#5 Milestone", "value":42 },
-    { "date":"#6 Milestone", "value":42 } 
+    { "date": "#1 Euro Introduction", "value": 42 },
+    { "date": "#2 Economical Development of the Euro", "value": 42 },
+    { "date": "#3 Impact of housing bubble", "value": 42 },
+    { "date": "#4 1st adjustment program", "value": 42 },
+    { "date": "#5 2nd adjustment program + ESM", "value": 42 },
+    { "date": "#6 Development Euro Crisis", "value": 42 },
+    { "date": "#7 Syria Election", "value": 42 }
 ]

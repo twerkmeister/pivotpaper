@@ -48,6 +48,7 @@
                 margin: 0;
                 font-size: 1.8rem;
                 font-weight: 300;
+                padding-bottom: 10px;
                 /*font-family: 'Poly', serif;*/
             }
 
@@ -85,13 +86,23 @@
                     /*padding-left: 5px;*/
                 }
             }
+
+            ul {
+                list-style: disc outside none;
+                padding: 0px 0px 0px 20px;
+                margin: 0px 0px 0px 0px;
+            }
         </style>
 
         <a id="anchor" class="card-header" layout horizontal center href="{{link}}" target="_blank">
             <img src="{{link | linkToImageUrl}}" alt="-"/>
             <div flex layout vertical class="divTxtContent">
                 <h2>{{title}}</h2>
-                <p>{{fulltext}}</p>
+                <ul>
+                    <template repeat="{{ bulletpoint in fulltext | textToBulletPoints}}">
+                        <li>{{bulletpoint}}</li>
+                    </template>
+                </ul>
             </div>
         </a>
     </template>
@@ -152,6 +163,9 @@
                 else {
                     return "images/pivotpaper.svg";
                 }
+            },
+            textToBulletPoints: function(text) {
+                return text.split("\n").filter(function(line){return line.length >0}).map(function(line){return line.replace(/^- /,"")})
             }
         });
     </script>

@@ -124,7 +124,7 @@
             ready: function () {
                 this.$.anchor.addEventListener("click", function() {
                     ga('send', 'event', 'link', 'click', this.link);
-                });
+                }.bind(this));
             },
             linkToImageUrl: function (link) {
                 if (link.indexOf("nytimes.com") >= 0) {

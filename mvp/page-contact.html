@@ -17,6 +17,7 @@
                 /*to so there is no resizing*/
                 border: 1px solid white;
                 padding: 20px;
+                                padding: 0 10% 0 10%;
                 width: 100%;
                 font-size: 1.2rem;
                 font-weight: 300;
@@ -51,8 +52,12 @@
 
             @media (min-width: 481px) {
                 .container {
-                    width: 90%;
+                    width: 75%;
                     margin: auto;
+                }
+
+                .card-header .survey-link {
+                    margin: 20px 0 20px 0;
                 }
             }
         </style>
@@ -73,7 +78,8 @@
                         <td><a href="mailto:hello@pivotpaper.com">hello@pivotpaper.com</a></td>
                     </tr>
                 </table>
-                <p>Tell us your opinion in <a href="https://www.getfeedback.com/r/qZjHQDt2">this survey</a>.</p>
+
+                <p class="survey-link"><a href="https://www.getfeedback.com/r/qZjHQDt2">Tell us your opinion in this survey.</a></p>
             </paper-shadow>
         </section>
     </template>

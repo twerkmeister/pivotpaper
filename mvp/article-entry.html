@@ -123,7 +123,7 @@
             },
             ready: function () {
                 this.$.anchor.addEventListener("click", function() {
-                    ga('send', 'event', 'link', 'click', getHostName(this.link));
+                    ga('send', 'event', 'link', 'click', this.link);
                 });
             },
             linkToImageUrl: function (link) {

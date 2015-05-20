@@ -53,11 +53,35 @@
                     font-size: 24px;
                 }
              }
+             .rotate {
+                -webkit-transform: rotate(-90deg);
+                -moz-transform: rotate(-90deg);
+                -ms-transform: rotate(-90deg);
+                -o-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+
+                /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+                -webkit-transform-origin: 50% 50%;
+                -moz-transform-origin: 50% 50%;
+                -ms-transform-origin: 50% 50%;
+                -o-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+
+                /* Should be unset in IE9+ I think. */
+                filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+            }
+            #achseDesrc {
+                position: absolute;
+                top: 47px;
+                left: -60px;
+                color: #6C6C6C;
+            }
         </style>
         <article-service id="service" hotness="{{hotness}}" articles="{{articles}}" url="" urllocal=""></article-service>
         <section class="container" layout vertical center>
             <h2>Explore the Greek Financial Crisis over the course of time</h2>
             <div id="chart">
+                <div class="rotate" id="achseDesrc">Hotness Index</div>
                 <canvas id="selCanvas"></canvas>
                 <canvas id="canvas" style="height: 100%; width: 100%;"/>
             </div>
@@ -68,6 +92,13 @@
             <div id="list">
                 <article-list id="articleList" articles="{{articles}}"></article-list>
             </div>
+            <paper-toast id="welcomeToast" text="Welcome to PivotPaper. Tell us your opinion at the feedback page.">
+                
+            </paper-toast>
+            <paper-toast id="toast" text="Your feedback is pecious to us!">
+                <a style="color: #ffc26c;" href="" target="_blank">Take me to the survey.</a>
+                <a id="laterLink" style="color: #ffc26c;" >I will do it later.</a>
+            </paper-toast>
         </section>
     </template>
     <script>
@@ -79,6 +110,7 @@
                 statusText1: "",
                 statusText2: "",
                 vMilestone: false
+                
             },
             create: function () {
                 
@@ -287,6 +319,11 @@
                         }
                     }.bind(this);
                 }.bind(this));
+                //enable toasts
+                this.$.laterLink.addEventListener("click", function () { this.scheduleToast(10 * 60 * 1000); }.bind(this));
+            },
+            scheduleToast: function(time) {
+                setTimeout(function() {}.bind(this), time);
             }
         });
     </script>

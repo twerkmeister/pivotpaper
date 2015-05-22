@@ -92,13 +92,6 @@
             <div id="list">
                 <article-list id="articleList" articles="{{articles}}"></article-list>
             </div>
-            <paper-toast id="welcomeToast" text="Welcome to PivotPaper. Tell us your opinion at the feedback page.">
-                
-<!--             </paper-toast>
-            <paper-toast id="toast" text="Your feedback is pecious to us!">
-                <a style="color: #ffc26c;" href="" target="_blank">Take me to the survey.</a>
-                <a id="laterLink" style="color: #ffc26c;" >I will do it later.</a>
-            </paper-toast> -->
         </section>
     </template>
     <script>
@@ -319,11 +312,6 @@
                         }
                     }.bind(this);
                 }.bind(this));
-                //enable toasts
-                this.$.laterLink.addEventListener("click", function () { this.scheduleToast(10 * 60 * 1000); }.bind(this));
-            },
-            scheduleToast: function(time) {
-                setTimeout(function() {}.bind(this), time);
             }
         });
     </script>

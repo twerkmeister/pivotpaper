@@ -319,8 +319,6 @@
                         }
                     }.bind(this);
                 }.bind(this));
-                //enable toasts
-                this.$.laterLink.addEventListener("click", function () { this.scheduleToast(10 * 60 * 1000); }.bind(this));
             },
             scheduleToast: function(time) {
                 setTimeout(function() {}.bind(this), time);

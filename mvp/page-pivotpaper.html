@@ -231,6 +231,7 @@
                         var year = 0;
                         if (activePoints.length > 0) {
                             var selX, selX2 = 0;
+                            this.$.articleList.showIntro = false;
                             if (!this.vMilestone) {
                                 var date1 = parseInt(activePoints[0].label);
                                 var date2 = parseInt(activePoints[activePoints.length - 1].label);

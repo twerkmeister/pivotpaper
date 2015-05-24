@@ -15,7 +15,15 @@
 
         <div layout vertical center>
             <template repeat="{{article in articles | filter(startDate, endDate)}}">
-                <article-entry link="{{article.link}}" title="{{article.title}}" fulltext="{{article.fulltext}}"></article-entry>
+                <article-entry link="{{article.link}}" title="{{article.title}}" fulltext="{{article.fulltext}}" date="{{article.date}}"></article-entry>
+            </template>
+            <template if="{{showIntro}}">
+                <article-entry disabled imgsrc="images/first.png" link="" title="Select your year of interest" fulltext="The Graph shows the progress of the topic. For every year we have calculated a hotness value representing the media response in this year." date="0"></article-entry>
+                <article-entry disabled imgsrc="images/second.png" link="" title="Browse the most interesting articles" fulltext="The most important articles published in the selected period are shown. For every article, a short summary tells you the main statements." date="0"></article-entry>
+                <article-entry imgsrc="images/third.png" link="https://www.getfeedback.com/r/qZjHQDt2" title="Give us feedback" fulltext="Your feedback is very precious to us! Therefore please don't forget to tell us your opinion in the survey." date="0"></article-entry>
+            </template>
+            <template if="{{showNothingFound}}">
+                <article-entry disabled imgsrc="images/logoStencil.png" link="" title="No articles found in this period" fulltext="" date="0"></article-entry>
             </template>
         </div>
     </template>
@@ -24,9 +32,11 @@
             publish: {
                 startDate: Date.now(),
                 articles: [],
-                endDate: Date.now()
+                endDate: Date.now(),
+                showIntro: true,
+                showNothingFound: false
             },
-            create: function() {
+            create: function() {                                                                                      
                 //this.articles = [];
             },
             ready: function() {
@@ -39,6 +49,7 @@
                     //return Math.random() > 0.5;
                     return (startDate <= el.date && endDate >= el.date);
                 }, this);
+                this.showNothingFound = ret.length === 0 && !this.showIntro;
                 return ret.sort(function(el1, el2){return el1.date-el2.date;});
                 //return ret;
             }

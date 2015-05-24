@@ -33,6 +33,10 @@
                 color: royalblue;
             }
 
+            :host([disabled]) a {
+                color: black !important;
+            }
+
             .card-header p {
                 margin: 0;
                 text-overflow: ellipsis;
@@ -92,12 +96,19 @@
                 padding: 0px 0px 0px 20px;
                 margin: 0px 0px 0px 0px;
             }
+
+            .smallDate {
+                color: #6C6C6C;
+                font-size: 0.8rem;
+            }
         </style>
 
         <a id="anchor" class="card-header" layout horizontal center href="{{link}}" target="_blank">
             <img src="{{link | linkToImageUrl}}" alt="-"/>
             <div flex layout vertical class="divTxtContent">
-                <h2>{{title}}</h2>
+                <h2>{{title}}
+                <span class="smallDate">{{date | dateToString}}</span>
+                </h2>
                 <ul>
                     <template repeat="{{ bulletpoint in fulltext | textToBulletPoints}}">
                         <li>{{bulletpoint}}</li>
@@ -119,14 +130,23 @@
             publish: {
                 text: "",
                 fulltext: "",
-                link: ""
+                link: "",
+                date: 0,
+                imgSrc: "",
+                disabled: false
             },
             ready: function () {
                 this.$.anchor.addEventListener("click", function() {
                     ga('send', 'event', 'link', 'click', this.link);
                 }.bind(this));
+                if (this.disabled) {
+                    this.$.anchor.addEventListener("click", function(e) {
+                        e.preventDefault();
+                    });
+            }
             },
             linkToImageUrl: function (link) {
+                if (this.imgSrc !== "") return this.imgSrc;
                 if (link.indexOf("nytimes.com") >= 0) {
                     return "images/nytimes.svg";
                 }
@@ -166,6 +186,10 @@
             },
             textToBulletPoints: function(text) {
                 return text.split("\n").filter(function(line){return line.length >0}).map(function(line){return line.replace(/^- /,"")})
+            },
+            dateToString: function (date) {
+                if (date == 0) return "";
+                return date.toLocaleDateString();
             }
         });
     </script>
